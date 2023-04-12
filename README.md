@@ -54,12 +54,12 @@ you can omit the `-k` flag if you have the `OPENAI_API_KEY` environment variable
 
     ```json
     {
-        "gpt_model": <model to use>,
-        "max_tokens": <max tokens to generate>,
-        "language": <language to use>,
-        "length": <how many objects to generate>,
-        "system_prompt": <system prompt to use>,
-        "model": <your actual json object to mock>
+        "gpt_model": "<model to use>",
+        "max_tokens": "<max tokens to generate>",
+        "language": "<language to use>",
+        "length": "<how many objects to generate>",
+        "system_prompt": "<system prompt to use>",
+        "model": "<your actual json object to mock>"
     }
     ```
 
@@ -68,3 +68,18 @@ you can omit the `-k` flag if you have the `OPENAI_API_KEY` environment variable
   - response:
 
       kinda your model :/
+
+## Example Request
+
+```json
+{
+    "model": {
+        "id": "random v4 uuid",
+        "fullname": "a random person name",
+        "email": "a random email",
+        "phone": "a random phone number",
+        "bio": "30-40 words of social media bio",
+        "username": "a random username that matches [a-zA-Z0-9_]{3,15}",
+    }
+}
+```
